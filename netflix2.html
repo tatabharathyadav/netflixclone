@@ -1,0 +1,388 @@
+<html>
+<head>
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    height: 700px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgb(0, 0, 0)), url("backgroundimage3.png");
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 15px;
+}
+
+select{
+    border-radius: 4px;
+    outline: 0px;
+    padding: 7px;
+    background: transparent;
+    width: 100px;
+    color: white;
+    padding: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    border-width: 3px;
+    border-color: white;
+}
+#button1{
+    border: 0px;
+    outline: 0px;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    padding: 9px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#button1:hover{
+    background-color: rgb(146, 27, 27);
+}
+.header-content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.header-content h1{
+    font-size: 46px;
+    font-weight: bold;
+}
+.header-content h3{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.header-content .email{
+    background: transparent;
+    width: 350px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 15px;
+    color: white;
+    font-size: larger;
+    backdrop-filter: brightness(0.5);
+}
+.header-content #button2{
+    border: 0px;
+    border-radius: 4px;
+    background-color: red;
+    padding: 16px;
+    font-size: larger;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+
+.header-content #button2 i{
+    margin-left: 10px;
+}
+
+
+hr{
+    height: 8px;
+    margin: 0px;
+    outline: 0px;
+    border: 0px;
+    background-color: rgb(61, 56, 56);
+}
+
+.body1{
+    background-color: black;
+    padding: 80px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.body1 .body1-content h1{
+    font-size: 50px;
+    font-weight: bolder;
+    padding-bottom: 10px;  
+}
+.body1 .body1-content h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.body1 #img1{
+    width: 500px;
+    height: 400px;
+}
+
+.body2{
+    background-color: black;
+    padding: 80px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.body2 .body2-content h1{
+    font-size: 50px;
+    font-weight:bolder;
+    padding-bottom: 10px;
+}
+.body2 .body2-content h3{
+    font-size: 25px;
+}
+
+
+.body3{
+    background-color: black;
+    padding: 80px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.body3 .body3-content h1{
+    font-size: 50px;
+}
+.body3 .body3-content h3{
+    font-size: 25px;
+}
+
+.body4{
+    background-color: black;
+    padding: 80px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.body4 .body4-content h1{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.body4 .body4-content h3{
+    font-size: 25px;
+}
+
+.body5{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px 0px 0px;
+}
+.body5 div{
+    height: 75px;
+    width: 60%;
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+.body5 div:hover{
+    background-color: rgb(47, 45, 45);
+    cursor: pointer;
+}
+.body5 h1
+{
+    font-family:"netflix Sans";
+
+}
+.body5 h2{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.secondemail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.secondemail .email1{
+    background: transparent;
+    width: 350px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 15px;
+    color: white;
+    font-size: larger;
+    backdrop-filter: brightness(0.5);
+}
+.secondemail #button2{
+    border: 0px;
+    border-radius: 4px;
+    background-color: red;
+    padding: 16px;
+    font-size: larger;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: #AFAFAF;
+    margin: 50px  50px 50px 200px;
+    font-size: large;
+}
+footer .footer-links{
+    display: flex;
+    gap: 200px;
+}
+footer a{
+    color: #AFAFAF;
+}
+
+
+     </style>            
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" height="100" width="160">
+            <div>
+                <select>
+                    <option>English</option>
+                    <option>Hindi</option>
+                </select>
+                <button id="button1">Sign In</button>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>Laughter. Tears. Thrills. Find it all on Netflix.</h1>
+            <h3>Endless entertainment starts at just ₹ 149. Cancel anytime.</h3>
+            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+            <input class="email" type="email" placeholder="Email address">
+            <button  id="button2">Get Started</button>
+        </div>
+    </header>
+
+
+    <hr>
+
+
+    <div class="body1">
+        <div class="body1-content">
+            <h1>Enjoy on your TV</h1>
+            <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
+        </div>
+        <img id="img1" src="2nd div image.png" height="300px" width="300px">
+    </div>
+
+    <hr>
+
+    <div class="body2">
+        <img src="3rd div image.jpg">
+        <div class="body2-content">
+            <h1>Download your shows to watch offline</h1>
+            <h3>Save your favourites easily and always have something to watch.</h3>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="body3">
+        <div class="body3-content">
+            <h1>Watch everywhere</h1>
+            <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+        </div>
+        <img src="4th div image.png" height="450px">
+    </div>
+
+    <hr>
+
+    <div class="body4">
+        <img src="5th div image.png" height="400px">
+        <div class="body4-content">
+            <h1>Create profiles for kids</h1>
+            <h3>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h3>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div class="body5">
+        <h1>Frequently Asked Questions</h1><br><br>
+        <div>
+            <p>What is Netflix?</p>
+        </div>
+        <div>
+            <p>How much does Netflix costs?</p>
+        </div>
+        <div>
+            <p>Where can I watch?</p>
+        </div>
+        <div>
+            <p>How do I cancel?</p>
+        </div>
+        <div>
+            <p>What can I watch on Netflix?</p>
+        </div>
+        <div>
+            <p>Is Netflix good for Childrens?</p>
+        </div>
+        <h2>Ready to watch? Enter your email to create or restart your membership.</h2>
+    </div>
+    <div class="secondemail">
+        <input class="email1" type="email" placeholder="Email address">
+        <button  id="button2">Get Started</button>
+    </div>
+
+    <hr>
+
+    <footer>
+        Questions? Call <a href="">000-800-919-1694</a><br><br><br>
+        <div class="footer-links">
+            <div class="Inner-footer">
+                <a href="">FAQ</a><br><br>
+                <a href="">Investor Relations</a><br><br>
+                <a href="">Privacy</a><br><br>
+                <a href="">Speed Test</a><br><br>
+            </div>
+            <div>
+                <a href="">Help Center</a><br><br>
+                <a href="">Jobs</a><br><br>
+                <a href="">Cookie Performance</a><br><br>
+                <a href="">Legal Notices</a><br><br>
+            </div>
+            <div>
+                <a href="">Account</a><br><br>
+                <a href="">Ways to watch</a><br><br>
+                <a href="">Coporate Information</a><br><br>
+                <a href="">Only on Netflix</a><br><br>
+            </div>
+            <div>
+                <a href=""> Media Centre</a><br><br>
+                <a href="">Terms of Uses</a><br><br>
+                <a href="">Contact Us</a><br><br>
+            </div>
+        </div>
+        <br>
+        <div>
+            <select>
+                <option>English</option>
+                <option>Hindi</option>
+            </select>
+        </div><br>
+        <p>Netflix india</p>
+    </footer>
+</body>
+</html>
